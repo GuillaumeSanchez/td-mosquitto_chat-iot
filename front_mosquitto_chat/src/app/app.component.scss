@@ -1,0 +1,32 @@
+.container {
+    width: 1920px;
+    height: 1080px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.salon {
+    width: 30%;
+    height: 1080px;
+}
+
+.chat-container {
+    width: 70%;
+    height: 1080px;
+}
+
+.chat-view {
+    height: 756px;
+    width: 1344px;
+}
+
+.chat-message {
+    height: 324px;
+    width: 1344px;
+}
+
+.div-border-2{
+    border:2px solid black;
+}
