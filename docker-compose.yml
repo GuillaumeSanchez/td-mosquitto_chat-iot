@@ -1,18 +1,12 @@
 version: '3.1'
 services: 
   db: 
-    image: mysql:8.0
+    build: ./mysql
     command: --default-authentication-plugin=mysql_native_password
-    environment:
-      MYSQL_ROOT_PASSWORD: monsuperpass
-      MYSQL_DATABASE: chat_mosquitto
-      MYSQL_USER: toto
-      MYSQL_PASSWORD: password
     networks:
       - backend
-  angular-service: # The name of the service
-    container_name: angularcontainer  # Container name
-    build: ./ # Location of our Dockerfile
+  angular: # The name of the service
+    build: ./angular # Location of our Dockerfile
     volumes: # Volume binding
       - './front_mosquitto_chat:/usr/src/app' 
     ports: 

@@ -1,15 +1,8 @@
-<div class="container">
-  <div class="display-flex">
-    <div class="salon div-border-2">
+<h1>Login</h1>
 
-    </div>
-    <div class="chat-container">
-      <div class="chat-view div-border-2">
-        
-      </div>
-      <div class="chat-message div-border-2">
-
-      </div>
-    </div>
-  </div>
+<div id="login-form">
+  <input [(ngModel)]="login" type="text" placeholder="login"/>
+  <input [(ngModel)]="password" type="password" placeholder="mot de passe"/>
+  <button (click)="connect()">Se connecter</button>
+  <a>S'inscrire</a>
 </div>
